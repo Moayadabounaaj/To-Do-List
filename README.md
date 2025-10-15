@@ -2,31 +2,31 @@
 
 Eine vollständige, moderne und funktionsreiche To-Do Listen Anwendung mit ansprechendem Design, Dark/Light Mode und umfangreichen Features.
 
-## ✨ Features
+##  Features
 
-✅ Grundfunktionen
+ Grundfunktionen
 - Aufgaben hinzufügen - einfach Text eingeben und fertig
 - Aufgaben bearbeiten - mit einem Klick ändern
 - Aufgaben abhaken - wenn Sie fertig sind
 - Aufgaben löschen - wenn Sie sie nicht mehr brauchen
 - Prioritäten setzen - niedrig, mittel oder hoch (mit bunten Labels)
 
-🔍 Suchen und Filtern
+ Suchen und Filtern
 - Schnelle Suche - tippen Sie was ein und finden Sie sofort Ihre Aufgaben
 - Filter - zeigen Sie nur "Alle", "Offene" oder "Erledigte" Aufgaben
 - Sortierung - nach Datum, Alphabet oder Priorität ordnen
 
-🎨 Design
+ Design
 - Dark und Light Mode - klicken Sie einfach auf das Mond/Sonne Icon oben rechts
 - Funktioniert überall - auf Handy, Tablet und Computer
 - Schöne Animationen - alles bewegt sich smooth
 - Moderne Optik - sieht professionell und schön aus
 
-💾 Speicherung
+ Speicherung
 - Automatisches Speichern - alles bleibt erhalten, auch nach dem Neuladen
 - Theme merken - die App erinnert sich an Ihren gewählten Modus
 
-📊 Statistiken
+ Statistiken
 - Übersicht - zeigt Ihnen wie viele Aufgaben Sie haben
 - Fortschritt - wie viel Prozent sind schon erledigt
 
