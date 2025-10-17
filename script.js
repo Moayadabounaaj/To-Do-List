@@ -1,3 +1,5 @@
+
+
 class TodoApp {
     constructor() {
         this.tasks = [];
@@ -94,9 +96,7 @@ class TodoApp {
         this.saveToLocalStorage();
     }
 
-    /**
-     * Fügt eine neue Aufgabe hinzu
-     */
+
     addTask(text, priority) {
         const task = {
             id: Date.now().toString(),
@@ -111,9 +111,6 @@ class TodoApp {
         this.showNotification('Aufgabe hinzugefügt!', 'success');
     }
 
-    /**
-     * Aktualisiert eine bestehende Aufgabe
-     */
     updateTask(id, text, priority) {
         const task = this.tasks.find(t => t.id === id);
         if (task) {
@@ -124,9 +121,7 @@ class TodoApp {
         }
     }
 
-    /**
-     * Löscht eine Aufgabe
-     */
+  
     deleteTask(id) {
         const taskElement = document.querySelector(`[data-id="${id}"]`);
         if (taskElement) {
@@ -140,9 +135,7 @@ class TodoApp {
         }
     }
 
-    /**
-     * Schaltet den Erledigt-Status einer Aufgabe um
-     */
+
     toggleTask(id) {
         const task = this.tasks.find(t => t.id === id);
         if (task) {
@@ -170,17 +163,13 @@ class TodoApp {
         }
     }
 
-    /**
-     * Verarbeitet die Suchfunktion
-     */
+ 
     handleSearch(e) {
         this.searchTerm = e.target.value.toLowerCase();
         this.updateUI();
     }
 
-    /**
-     * Löscht die Suche
-     */
+
     clearSearch() {
         this.searchTerm = '';
         this.searchInput.value = '';
@@ -197,17 +186,12 @@ class TodoApp {
         this.updateUI();
     }
 
-    /**
-     * Verarbeitet Sortier-Änderungen
-     */
     handleSort(e) {
         this.currentSort = e.target.value;
         this.updateUI();
     }
 
-    /**
-     * Schaltet zwischen Light/Dark Theme um
-     */
+   
     toggleTheme() {
         const currentTheme = document.documentElement.dataset.theme;
         const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
@@ -221,9 +205,7 @@ class TodoApp {
         this.showNotification(`Theme zu ${newTheme === 'dark' ? 'Dunkel' : 'Hell'} gewechselt!`, 'info');
     }
 
-    /**
-     * Verarbeitet Tastatur-Shortcuts
-     */
+  
     handleKeyboard(e) {
         // Ctrl/Cmd + K für Suche fokussieren
         if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
@@ -243,12 +225,12 @@ class TodoApp {
     cancelEdit() {
         this.isEditing = null;
         this.taskInput.value = '';
-        this.taskInput.placeholder = ;
-        this.prioritySelect.selectedIndex = 1; 
+        this.taskInput.placeholder = 'Neue Aufgabe hinzufügen...';
+        this.prioritySelect.selectedIndex = 1; // Medium priority
     }
-	
-	
-	getFilteredAndSortedTasks() {
+
+    
+    getFilteredAndSortedTasks() {
         let filtered = [...this.tasks];
         
         
